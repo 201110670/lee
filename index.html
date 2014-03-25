@@ -10,23 +10,23 @@ window.addEventListener("devicemotion", function(event) {
 		var ax = event.accelerationIncludingGravity.x;
 		var ay = event.accelerationIncludingGravity.y;
 		if(ax<=-1){
-		document.getElementById("compass").innerHTML="WEST"
-		}if(ax>=1){
 		document.getElementById("compass").innerHTML="EAST"
+		}if(ax>=1){
+		document.getElementById("compass").innerHTML="WEST"
 		}if(ay>=1){
-		document.getElementById("compass").innerHTML="NORTH"
-		}if(ay<=-1){
 		document.getElementById("compass").innerHTML="SOUTH"
+		}if(ay<=-1){
+		document.getElementById("compass").innerHTML="NORTH"
 		}if(ay>=1 && ax>=1){
-		document.getElementById("compass").innerHTML="NORTH EAST"
-		}
-		if(ay<=-1 && ax<=-1){
 		document.getElementById("compass").innerHTML="SOUTH WEST"
 		}
+		if(ay<=-1 && ax<=-1){
+		document.getElementById("compass").innerHTML="NORTH EAST"
+		}
 		if(ay<=-1 && ax>=1){
-		document.getElementById("compass").innerHTML="SOUTH EAST"
-		}if(ax<=-1 && ay>=1){
 		document.getElementById("compass").innerHTML="NORTH WEST"
+		}if(ax<=-1 && ay>=1){
+		document.getElementById("compass").innerHTML="SOUTH EAST"
 		}if(ay==0){
 		document.getElementById("compass").innerHTML="DEFAULT"
 		}
